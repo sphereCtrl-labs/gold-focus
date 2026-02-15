@@ -2,7 +2,6 @@ import { HeroSection } from "@/components/landing/hero-section";
 import { Navbar } from "@/components/landing/navbar";
 import { ServicesSection } from "@/components/landing/services-section";
 import { StateSection } from "@/components/landing/stat-section";
-import Image from "next/image";
 
 export default function Page() {
   return (

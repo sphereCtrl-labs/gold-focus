@@ -11,7 +11,7 @@ import {
 const benefits = [
   {
     icon: TradeUpIcon,
-    title: "15",
+    title: "15 years",
     description:
       "Over 15 years of experience in the gold trading industry.",
   },
