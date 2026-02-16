@@ -17,7 +17,7 @@ export function HeroSection() {
       }}
     >
       <div className="absolute inset-0 bg-foreground/80 dark:bg-foreground/90" />
-     
+
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         <div className="mx-auto max-w-4xl text-center">
           <motion.div
@@ -38,9 +38,7 @@ export function HeroSection() {
             transition={{ duration: 0.5, delay: 0.1 }}
           >
             Secure Your Future with{" "}
-            <span className=" bg-clip-text text-primary">
-              Gold Investments
-            </span>
+            <span className=" bg-clip-text text-primary">Gold Investments</span>
           </motion.h1>
 
           <motion.p
