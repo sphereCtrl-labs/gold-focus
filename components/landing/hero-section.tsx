@@ -7,39 +7,50 @@ import { LinkButton } from "@/components/ui/link-buttons";
 
 export function HeroSection() {
   return (
-    <section className="relative overflow-hidden border-b bg-gradient-to-b from-background to-muted/20 py-20 md:py-32">
-      <div className="max-w-7xl mx-auto px-4">
+    <section
+      className="relative overflow-hidden border-b bg-gradient-to-b from-background to-muted/20 py-20 md:py-32"
+      style={{
+        backgroundImage: "url(/img/gold-vault.jpg)",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+      <div className="absolute inset-0 bg-foreground/80 dark:bg-foreground/90" />
+     
+      <div className="max-w-7xl mx-auto px-4 relative z-10">
         <div className="mx-auto max-w-4xl text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <div className="mb-6 inline-flex items-center gap-2 rounded-full border bg-muted/50 px-4 py-2 text-sm text-muted-foreground">
+            <div className="mb-6 inline-flex items-center gap-2 rounded-full border bg-muted/50 px-4 py-2 text-sm text-background">
               <HugeiconsIcon icon={Target01Icon} className="h-4 w-4" />
               <span>15+ Years of Experience</span>
             </div>
           </motion.div>
 
           <motion.h1
-            className="mb-6 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl"
+            className="mb-6 text-4xl text-background font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            Secure Your Future with {" "}
-            <span className="bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
+            Secure Your Future with{" "}
+            <span className=" bg-clip-text text-primary">
               Gold Investments
             </span>
           </motion.h1>
 
           <motion.p
-            className="mb-8 text-lg text-muted-foreground sm:text-xl md:mb-12 md:text-xl"
+            className="mb-8 text-lg text-background sm:text-xl md:mb-12 md:text-xl"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            Trusted & transparent gold trading for a brighter tomorrow. Where your gold rest in saftety
+            Trusted & transparent gold trading for a brighter tomorrow. Where
+            your gold rest in saftety
           </motion.p>
 
           <motion.div
@@ -67,12 +78,14 @@ export function HeroSection() {
           </motion.div>
 
           <motion.div
-            className="mt-12 text-sm text-muted-foreground"
+            className="mt-12 text-sm text-background"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            <p>✨ Secure · Fully Insured Holdings · 99.9% Client Satisfaction</p>
+            <p>
+              ✨ Secure · Fully Insured Holdings · 99.9% Client Satisfaction
+            </p>
           </motion.div>
         </div>
 
